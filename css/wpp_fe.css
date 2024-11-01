@@ -1,0 +1,69 @@
+#wpp-top-banner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 499999;
+}
+.wpp-popup-bnnr{
+	display: none;
+	position: fixed;
+	right: auto;
+	top: 140px;
+	bottom: auto;
+	left: 50%;
+	z-index: 699999;
+}
+.wpp-popup-bg{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 599999;
+}
+
+/*close*/
+.wppbnrclosediv{
+	position: absolute;
+	top:8px;
+	right:8px;
+}
+.wppbnrclose {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.wppbnrclose:hover .clBefore, .wppbnrclose:hover .clAfter {
+  background-color: #666;
+}
+.wppbnrclose .clBefore, .wppbnrclose .clAfter {
+  content: '';
+  position: absolute;
+  height: 4px;
+  margin-top: -2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  background-color: #000;
+}
+.wppbnrclose .clBefore {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.wppbnrclose .clAfter {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
